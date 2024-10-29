@@ -1,0 +1,95 @@
+PEP: 764
+Title: None-aware member access
+Author: Ditlev Stjerne <ditlev.stjerne@gmail.com>
+Sponsor: 
+PEP-Delegate: 
+Discussions-To: 
+Status: Draft
+Type: Standards Track
+Created: 29-Oct-2024
+Python-Version: 3.15
+Post-History:
+Resolution:
+
+Abstract
+========
+
+Most modern programming languages provide convience syntax for dealing with null
+values. The python language could benefit from addtion of some of these conviences.
+This PEP only addresses the concept of optional memeber access
+or as refered to in other languages as optional chaining. These languages include
+Swift [1]_, C# [2]_ and JavaScript [3]_.
+
+The PEP will focus only on optional member access and keep other related topics
+as out of scope. The :pep:`505` already describes some of these topics but the
+PEP has not gained traction.
+
+Motivation
+==========
+
+[Clearly explain why the existing language specification is inadequate to address the problem that the PEP solves.]
+
+
+Rationale
+=========
+
+[Describe why particular design decisions were made.]
+
+
+Specification
+=============
+
+[Describe the syntax and semantics of any new language feature.]
+
+
+Backwards Compatibility
+=======================
+
+This PEP would have no impact on pre-existing code as this is
+an addition to the language specification.
+
+Security Implications
+=====================
+
+This PEP proposal is an addition to the language specification
+and does not have any security implications.
+
+How to Teach This
+=================
+
+To teach this addtiion in the specification the documentation and
+tutorials needs to be updated and give the users a clear view on
+how to use the feature. It should also describe how the implementation
+differences from object evalaution using the method override `__bool__`.
+
+Rejected Ideas
+==============
+
+[Why certain ideas that were brought while discussing this PEP were not ultimately pursued.]
+
+
+Open Issues
+===========
+
+[Any points that are still being decided/discussed.]
+
+
+Footnotes
+=========
+
+[A collection of footnotes cited in the PEP, and a place to list non-inline hyperlink targets.]
+
+.. [1] Swift Reference: Optional Chaining
+   (https://docs.swift.org/swift-book/documentation/the-swift-programming-language/optionalchaining/)
+
+.. [2] C# Reference: Null-conditional operators ?. and ?[]
+   (https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/member-access-operators#null-conditional-operators--and-)
+
+.. [3] JavaScript Reference: Optional chaining (?.)
+   (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
+
+Copyright
+=========
+
+This document is placed in the public domain or under the
+CC0-1.0-Universal license, whichever is more permissive.
